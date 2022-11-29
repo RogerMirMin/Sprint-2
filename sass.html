@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <title>Sprint2</title>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/db223eb720.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -19,11 +21,11 @@
             <nav
                 class="col-md-5 col-sm-7 d-sm-flex d-none offset-md-4 offset-sm-0 navbar mt-2 justify-content-around py-0">
                 <div class="px-2" style="font-size:0.7em"><a href="#"
-                        class="text-decoration-none text-black">FEATURES</a></div>
+                        class="hover-secondary text-decoration-none text-black">FEATURES</a></div>
                 <div class="px-2" style="font-size:0.7em"><a href="#"
-                        class="text-decoration-none text-black">PRICING</a></div>
+                        class="hover-secondary text-decoration-none text-black">PRICING</a></div>
                 <div class="px-2" style="font-size:0.7em"><a href="#"
-                        class="text-decoration-none text-black">CONTACT</a></div>
+                        class="hover-secondary text-decoration-none text-black">CONTACT</a></div>
                 <button class="btn btn-secondary px-4 mx-2 text-white" style="font-size:0.7em">LOGIN</button></a>
             </nav>
             <div class="col-1 offset-6 d-block d-sm-none mt-2">
@@ -61,16 +63,18 @@
             <ul class="col-md-8 nav col-10 text-center nav-tabs mb-3 justify-content-md-center flex-column flex-md-row mx-auto"
                 id="ex1" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link active text-center" id="ex1-tab-1" data-mdb-toggle="tab" href="#ex1-tabs-1"
-                        role="tab" aria-controls="ex1-tabs-1" aria-selected="true">Simple Bookmarking</a>
+                    <a class="nav-link hover-secondary active text-center" id="ex1-tab-1" data-mdb-toggle="tab"
+                        href="#ex1-tabs-1" role="tab" aria-controls="ex1-tabs-1" aria-selected="true">Simple
+                        Bookmarking</a>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link" style="color:grey" id="ex1-tab-2" data-mdb-toggle="tab" href="#ex1-tabs-2"
-                        role="tab" aria-controls="ex1-tabs-2" aria-selected="false">Speedy Searching</a>
+                    <a class="nav-link hover-secondary" style="color:grey" id="ex1-tab-2" data-mdb-toggle="tab"
+                        href="#ex1-tabs-2" role="tab" aria-controls="ex1-tabs-2" aria-selected="false">Speedy
+                        Searching</a>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link" style="color:grey" id="ex1-tab-3" data-mdb-toggle="tab" href="#ex1-tabs-3"
-                        role="tab" aria-controls="ex1-tabs-3" aria-selected="false">Easy Sharing</a>
+                    <a class="nav-link hover-secondary" style="color:grey" id="ex1-tab-3" data-mdb-toggle="tab"
+                        href="#ex1-tabs-3" role="tab" aria-controls="ex1-tabs-3" aria-selected="false">Easy Sharing</a>
                 </li>
             </ul>
         </div>
@@ -122,68 +126,69 @@
         </div>
     </section>
 
-    <section id="section4" class="section3 col-11 mx-auto col-md-6 mx-md-auto text-center mb-5">
+
+    <section id="section4" class="col-11 mx-auto col-md-6 mx-md-auto text-center mb-5">
         <h2 class="fw-bold mb-4">Frequently Asked Questions</h2>
         <p class="mb-4" style="color:grey">Here are some of our FAQ's. If you have any other questions you'd like
             answered, please feel free to email us.</p>
-        <div class="accordion mx-auto mb-4" id="accordionExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button collapsed text-center" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        What is Bookmark?
-                    </button>
-                </h2>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        How can I request a new browser?
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        You can't lol.
+
+        <div class="accordion accordion-flush mx-auto mb-4" id="accordionExample">
+            <div class="m-4">
+                <div class="accordion" id="myAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button type="button" class="accordion-button collapsed hover-secondary text-black"
+                                data-bs-toggle="collapse" data-bs-target="#collapseOne">What is Bookmark?</button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                            <div class="card-body">
+                                <p class="text-start" style="padding: 16px 20px">It is a cool tool.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button type="button" class="accordion-button collapsed hover-secondary text-black"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo">How can I request a new
+                                browser?</button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                            <div class="card-body">
+                                <p class="text-start" style="padding: 16px 20px">Suerte en la bida.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button type="button" class="accordion-button collapsed hover-secondary text-black"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree">Is there a mobile
+                                app?</button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                            <div class="card-body">
+                                <p class="text-start" style="padding: 16px 20px">No. Sry not sry.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button type="button" class="accordion-button collapsed hover-secondary text-black"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFour">What about other Chromium
+                                browsers?</button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                            <div class="card-body">
+                                <p class="text-start" style="padding: 16px 20px">What are Chromium browsers?</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Is there a mobile app?
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        No, there isn't.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        What about other Chromium browsers?
-                    </button>
-                </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Nothing interesting.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="btn btn-primary">More info</button>
 
     </section>
 
     <section id="section5" class="text-white mt-5">
-        <div class="row g-0 col-12 text-center bg-primary px-3 py-3" style="margin-top:8em">
+        <div class="row g-0 col-12 text-center bg-primary px-3 pt-3 pb-4">
             <p class="">35.000 already joined</p>
             <h2 class="mb-4 fw-bold">Stay up-to-date with what we are doing</h2>
             <form class="col-9 d-flex flex-column flex-sm-row justify-content-center mx-auto needs-validation"
@@ -198,21 +203,25 @@
                 </div>
             </form>
         </div>
-        <div class="row g-0 col-12 bg-blaufosc pb-3" style="font-size:0.7em">
-            <nav class="col-12 col-md-5 offset-md-1 navbar py-0 mt-3 flex-column flex-md-row">
+        <div class="row g-0 col-12 bg-blaufosc pb-4 pt-2" style="font-size:0.7em">
+            <nav class="col-12 col-md-6 offset-md-1 navbar py-0 mt-3 flex-column flex-md-row">
                 <div class="fw-bold pb-3 pb-md-0" style="font-size:1.5em">
                     <img src="Images/logo-bookmark (2).png" class="logo img-fluid" alt="Logo">
                 </div>
-                <div class="features px-2 pb-3 pb-md-0">FEATURES</div>
-                <div class="pricing px-2 pb-3 pb-md-0">PRICING</div>
-                <div class="contact px-2 pb-3 pb-md-0 w-auto">CONTACT</div>
+                <a href=#
+                    class="hover-secondary features px-2 py-2 py-md-0 text-decoration-none text-white">FEATURES</a>
+                <a href=# class="hover-secondary features px-2 py-2 py-md-0 text-decoration-none text-white">PRICING</a>
+                <a href=# class="hover-secondary features px-2 py-2 py-md-0 text-decoration-none text-white">CONTACT</a>
             </nav>
             <div class="col-12 col-md-2 offset-md-3 mt-3 text-center">
-                <div class="d-inline-block align-middle" style="height:100%"></div>
-                <img class="me-3 hover-icon" style="color:red" src="/Images/icon-facebook.svg" alt="FB-icon"
-                    width="20em">
-                <img class="hover-icon" src="/Images/icon-twitter.svg" alt="TW-icon" width="20em">
+                <div class="d-inline-block align-bottom pt-1">
+                    <a href="#"><i class="fa-brands fa-square-facebook fs-5 me-2 mt-1 hover-secondary"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter fs-5 mt-1 hover-secondary"></i></a>
+                </div>
+
             </div>
+        </div>
+
         </div>
     </section>
     <script>
@@ -235,7 +244,6 @@
             })
         })()
     </script>
-
 
 </body>
 
