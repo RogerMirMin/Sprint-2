@@ -182,6 +182,60 @@
 
     </section>
 
+    <section id="section5" class="text-white mt-5">
+        <div class="row g-0 col-12 text-center bg-primary px-3 py-3" style="margin-top:8em">
+            <p class="">35.000 already joined</p>
+            <h2 class="mb-4 fw-bold">Stay up-to-date with what we are doing</h2>
+            <form class="col-9 d-flex flex-column flex-sm-row justify-content-center mx-auto needs-validation"
+                novalidate>
+                <div class="me-2">
+                    <input type="email" class="form-control mb-2" id="email" placeholder="Enter your email adress"
+                        required>
+                    <div class="invalid-feedback bg-white rounded-1 mb-2 mt-0">Escriu un email.</div>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-secondary text-white">Contact us</button>
+                </div>
+            </form>
+        </div>
+        <div class="row g-0 col-12 bg-blaufosc pb-3" style="font-size:0.7em">
+            <nav class="col-12 col-md-5 offset-md-1 navbar py-0 mt-3 flex-column flex-md-row">
+                <div class="fw-bold pb-3 pb-md-0" style="font-size:1.5em">
+                    <img src="Images/logo-bookmark (2).png" class="logo img-fluid" alt="Logo">
+                </div>
+                <div class="features px-2 pb-3 pb-md-0">FEATURES</div>
+                <div class="pricing px-2 pb-3 pb-md-0">PRICING</div>
+                <div class="contact px-2 pb-3 pb-md-0 w-auto">CONTACT</div>
+            </nav>
+            <div class="col-12 col-md-2 offset-md-3 mt-3 text-center">
+                <div class="d-inline-block align-middle" style="height:100%"></div>
+                <img class="me-3 hover-icon" style="color:red" src="/Images/icon-facebook.svg" alt="FB-icon"
+                    width="20em">
+                <img class="hover-icon" src="/Images/icon-twitter.svg" alt="TW-icon" width="20em">
+            </div>
+        </div>
+    </section>
+    <script>
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+
 
 </body>
 

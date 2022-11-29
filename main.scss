@@ -1,8 +1,15 @@
 $primary: #5265E1;
 $secondary: #FA5959;
 
+
 @import "./node_modules/bootstrap/scss/_functions";
 @import "./node_modules/bootstrap/scss/_variables";
 $nav-tabs-link-active-border-color: transparent transparent orange;
+
+$custom-theme-colors: (
+    "blaufosc": rgb(40, 45, 70)
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
 @import "./node_modules/bootstrap/scss/bootstrap";
