@@ -21,6 +21,13 @@
   color: #FA5959 !important;
 }
 
+.carta:nth-child(3n) {
+  margin-top: 2em;
+}
+.carta:nth-child(3n+2) {
+  margin-top: 1em;
+}
+
 /*!
  * Bootstrap  v5.2.2 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -807,7 +814,7 @@ progress {
   width: 91.66666667%;
 }
 
-.col-12 {
+.col-12, .carta {
   flex: 0 0 auto;
   width: 100%;
 }
@@ -1129,7 +1136,7 @@ progress {
     flex: 0 0 auto;
     width: 16.66666667%;
   }
-  .col-md-3 {
+  .col-md-3, .carta {
     flex: 0 0 auto;
     width: 25%;
   }
@@ -7236,7 +7243,7 @@ textarea.form-control-lg {
   display: none !important;
 }
 
-.shadow {
+.shadow, .carta {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
@@ -7917,7 +7924,7 @@ textarea.form-control-lg {
   padding: 0.25rem !important;
 }
 
-.p-2 {
+.p-2, .carta {
   padding: 0.5rem !important;
 }
 
@@ -8386,7 +8393,7 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-white {
+.bg-white, .carta {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
 }
@@ -8453,7 +8460,7 @@ textarea.form-control-lg {
   pointer-events: auto !important;
 }
 
-.rounded {
+.rounded, .carta {
   border-radius: var(--bs-border-radius) !important;
 }
 
@@ -9211,7 +9218,7 @@ textarea.form-control-lg {
     margin-right: 0.25rem !important;
     margin-left: 0.25rem !important;
   }
-  .mx-md-2 {
+  .mx-md-2, .carta {
     margin-right: 0.5rem !important;
     margin-left: 0.5rem !important;
   }

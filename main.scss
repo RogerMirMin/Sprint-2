@@ -43,4 +43,17 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
     color: $secondary !important;
 }
 
+.carta {
+
+    @extend .rounded, .shadow, .col-12, .col-md-3, .p-2, .mx-md-2, .bg-white;
+
+    &:nth-child(3n) {
+        margin-top: 2em;
+    }
+
+    &:nth-child(3n+2) {
+        margin-top: 1em;
+    }
+}
+
 @import "./node_modules/bootstrap/scss/bootstrap";
