@@ -1,4 +1,8 @@
 $primary: #5265E1;
 $secondary: #FA5959;
 
+@import "./node_modules/bootstrap/scss/_functions";
+@import "./node_modules/bootstrap/scss/_variables";
+$nav-tabs-link-active-border-color: transparent transparent orange;
+
 @import "./node_modules/bootstrap/scss/bootstrap";
