@@ -1,0 +1,22 @@
+$patit: green;
+
+@mixin flexible($dis , $dir, $wrap, $just, $align) {
+    display: $dis;
+    flex-flow: $dir $wrap;
+    justify-content: $just;
+    align-content: $align;
+}
+
+.section{
+    &__h2{
+        color: blue;
+        height: 10px;
+    }
+}
+
+.classe1 {
+    background-color: $patit;
+    color: red;
+    width: 50%;
+    @include flexible(flex, row, nowrap, center, center);
+}

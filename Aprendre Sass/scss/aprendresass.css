@@ -1,0 +1,14 @@
+.section__h2 {
+  color: blue;
+  height: 10px;
+}
+
+.classe1 {
+  background-color: green;
+  color: red;
+  width: 50%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+}/*# sourceMappingURL=aprendresass.css.map */
